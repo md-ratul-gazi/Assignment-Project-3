@@ -41,8 +41,11 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "primary-title-color": "#fff",
+              "primary-text-color": "#fff",
               "primary-bg-color": "#F85559",
+            },
+            boxShadow: {
+              "custom-shadow": "0px 8px 60px 0px rgba(0, 0, 0, 0.05)",
             },
           },
         },
@@ -62,7 +65,7 @@
     <!-- Header section starts here -->
     <header class="container mx-auto">
       <!-- Navbar section starts here -->
-      <nav class="mt-[50px] mb-[56px]">
+      <nav class="mt-[50px] mb-[56px] lg:px-0 md:px-5">
         <!-- Desktop navbar starts here -->
         <div
           class="navbar lg:bg-primary-bg-color text-white py-8 px-12 rounded-[600px] hidden lg:flex"
@@ -109,7 +112,7 @@
 
           <div>
             <a
-              class="btn btn-ghost font-bold text-4xl capitalize lg:text-primary-title-color text-black flex-nowrap hover:bg-opacity-0"
+              class="btn btn-ghost font-bold text-4xl capitalize lg:text-primary-text-color text-black flex-nowrap hover:bg-opacity-0"
               ><img src="./images/logo.png" alt="Website Logo" />Fruit Burst</a
             >
           </div>
@@ -132,7 +135,7 @@
             class="navbar py-11 justify-between md:bg-primary-bg-color md:rounded-[600px] h-7 lg:hidden"
           >
             <a
-              class="btn btn-ghost font-bold text-xl capitalize lg:text-primary-title-[#121212] text-black flex-nowrap hover:bg-opacity-0 lg:hidden md:text-primary-title-color"
+              class="btn btn-ghost font-bold text-xl capitalize lg:text-primary-title-[#121212] text-black flex-nowrap hover:bg-opacity-0 lg:hidden md:text-primary-text-color "
               ><img
                 src="./images/logo.png"
                 alt="Website Logo"
@@ -182,17 +185,199 @@
       <!-- Navbar section ends here -->
 
       <!-- Banner section stats here -->
-      <section></section>
+      <section class="px-5 lg:px-0 md:px-5">
+        <div class="carousel w-full rounded-xl md:h-[600px] h-80">
+          <!-- Slide 1 starts here -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero"
+              style="background-image: url('./images/banner1.png')"
+            >
+              <div class="hero-overlay bg-opacity-50 bg-black"></div>
+              <div class="hero-content text-center text-primary-text-color">
+                <div class="lg:-mt-20">
+                  <h1 class="mb-5 lg:text-7xl md:text-5xl text-2xl font-extrabold">
+                    Exotic tastes at your
+                    <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 lg:text-xl md:text-lg text-sm font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color text-primary-text-color lg:text-xl text- outline-none border-none md:w-[154px] md:h-16 w-[118px] h-10  capitalize lg:font-extrabold md:font-extrabold font-bold	"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+          <!-- Slide 1 ends here -->
+
+          <!-- Slide 2 starts here -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero"
+              style="background-image: url('./images/banner2.png')"
+            >
+              <div class="hero-overlay bg-opacity-50 bg-black"></div>
+              <div class="hero-content text-center text-primary-text-color">
+                <div class="lg:-mt-20">
+                  <h1 class="mb-5 lg:text-7xl md:text-5xl text-2xl font-extrabold">
+                    Exotic tastes at your
+                    <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 lg:text-xl md:text-lg text-sm font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color text-primary-text-color lg:text-xl text- outline-none border-none md:w-[154px] md:h-16 w-[118px] h-10  capitalize lg:font-extrabold md:font-extrabold font-bold	"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide3" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+          <!-- Slide 2 ends here -->
+
+          <!-- Slide 3 starts here -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero"
+              style="background-image: url('./images/banner3.png')"
+            >
+              <div class="hero-overlay bg-opacity-50 bg-black"></div>
+              <div class="hero-content text-center text-primary-text-color">
+                <div class="lg:-mt-20">
+                  <h1 class="mb-5 lg:text-7xl md:text-5xl text-2xl font-extrabold">
+                    Exotic tastes at your
+                    <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 lg:text-xl md:text-lg text-sm font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color text-primary-text-color lg:text-xl text- outline-none border-none md:w-[154px] md:h-16 w-[118px] h-10  capitalize lg:font-extrabold md:font-extrabold font-bold	"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide4" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+          <!-- Slide 3 ends here -->
+
+          <!-- Slide 4 starts here -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero"
+              style="background-image: url('./images/banner4.png')"
+            >
+              <div class="hero-overlay bg-opacity-50 bg-black"></div>
+              <div class="hero-content text-center text-primary-text-color">
+                <div class="lg:-mt-20">
+                  <h1 class="mb-5 lg:text-7xl md:text-5xl text-2xl font-extrabold">
+                    Exotic tastes at your
+                    <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 lg:text-xl md:text-lg text-sm font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color text-primary-text-color lg:text-xl text- outline-none border-none md:w-[154px] md:h-16 w-[118px] h-10  capitalize lg:font-extrabold md:font-extrabold font-bold	"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❮</a>
+              <a href="#slide1" class="btn btn-circle  text-white bg-[#121212] hover:bg-black bg-opacity-2 border-none">❯</a>
+            </div>
+          </div>
+          <!-- Slide 4 ends  here -->
+        </div>
+
+        <!-- Fruit section starts here -->
+        <div
+          class=" justify-evenly items-center w-[1196px] h-64 rounded-lg bg-[#fff] shadow-custom-shadow mx-auto -mt-36 relative text-center hidden md:hidden lg:flex"
+        >
+          <div>
+            <img src="./images/fruit1.png" alt="Fruit" />
+            <p class="text-[#121212CC] text-xl font-medium">Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit2.png" alt="Fruit" />
+            <p class="text-[#121212CC] text-xl font-medium">Orange</p>
+          </div>
+          <div>
+            <img src="./images/fruit3.png" alt="Fruit" />
+            <p class="text-[#121212CC] text-xl font-medium">Mango</p>
+          </div>
+          <div>
+            <img src="./images/fruit4.png" alt="Fruit" />
+            <p class="text-[#121212CC] text-xl font-medium ">Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit5.png" alt="Fruit" />
+            <p class="text-[#121212CC] text-xl font-medium">Mango</p>
+          </div>
+        </div>
+        <!-- Fruit section ends here -->
+      </section>
+
       <!-- Banner section ends here -->
     </header>
     <!-- Header section ends here -->
-
-    <!-- Main section starts here -->
-    <main></main>
-    <!-- Main section ends here -->
-
-    <!-- Footer section starts here -->
-    <footer></footer>
-    <!-- Footer section ends here -->
   </body>
 </html>
