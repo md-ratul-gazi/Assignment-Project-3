@@ -15,6 +15,16 @@
     />
     <!-- Google font link here -->
 
+    <!-- Font awesome kit link here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font awesome kit link here -->
+
     <!-- Tailwind CSS and DaisyUI cdn link here -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -31,6 +41,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-title-color": "#fff",
+              "primary-bg-color": "#F85559",
             },
           },
         },
@@ -48,8 +60,130 @@
   </head>
   <body class="font-lato">
     <!-- Header section starts here -->
-    <header>
-        <h1>Hello World!</h1>
+    <header class="container mx-auto">
+      <!-- Navbar section starts here -->
+      <nav class="mt-[50px] mb-[56px]">
+        <!-- Desktop navbar starts here -->
+        <div
+          class="navbar lg:bg-primary-bg-color text-white py-8 px-12 rounded-[600px] hidden lg:flex"
+        >
+          <div class="navbar-start text-black flex-1">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 text-lg font-medium text-white"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <a
+              class="btn btn-ghost font-bold text-4xl capitalize lg:text-primary-title-color text-black flex-nowrap hover:bg-opacity-0"
+              ><img src="./images/logo.png" alt="Website Logo" />Fruit Burst</a
+            >
+          </div>
+          <div class="navbar-end relative hidden lg:flex w-[630px]">
+            <input
+              type="search"
+              placeholder="Search here"
+              class="w-[400px] rounded-[50px] pl-8 pr-2 py-4 focus:outline-none text-black"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-7 text-[#121212]"
+            ></i>
+          </div>
+        </div>
+        <!-- Desktop navbar ends here -->
+
+        <!-- Mobile and tablet nav starts here -->
+        <div>
+          <div
+            class="navbar py-11 justify-between md:bg-primary-bg-color md:rounded-[600px] h-7 lg:hidden"
+          >
+            <a
+              class="btn btn-ghost font-bold text-xl capitalize lg:text-primary-title-[#121212] text-black flex-nowrap hover:bg-opacity-0 lg:hidden md:text-primary-title-color"
+              ><img
+                src="./images/logo.png"
+                alt="Website Logo"
+                class="w-8 h-8"
+              />Fruit Burst</a
+            >
+
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden md:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-4"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li>
+                  <input
+                    type="search"
+                    placeholder="Search here"
+                    class="bg-gray-100"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile and Tablet navbar ends here -->
+      </nav>
+      <!-- Navbar section ends here -->
+
+      <!-- Banner section stats here -->
+      <section></section>
+      <!-- Banner section ends here -->
     </header>
     <!-- Header section ends here -->
 
