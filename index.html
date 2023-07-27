@@ -602,20 +602,16 @@
               <!-- Modal section starts here -->
               <div class="card-actions">
                 <!-- Open the modal using ID.showModal() method -->
+
                 <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg lg:hidden block"
-                >
-                  Details
-                </button>
-                <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg hidden lg:flex"
+                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg"
                   onclick="my_modal_1.showModal()"
                 >
                   Details
                 </button>
                 <dialog
                   id="my_modal_1"
-                  class="modal justify-center items-center w-[500px] mx-auto my-auto"
+                  class="modal justify-center items-center mx-auto my-auto"
                 >
                   <form
                     method="dialog"
@@ -623,7 +619,7 @@
                   >
                     <div>
                       <img
-                        class="w-[200px] h-[200px] mt-[70px] m"
+                        class="lg:w-[200px] lg:h-[200px] w-full h-full mt-[70px] m"
                         src="images/fruit6.png"
                         alt="Fruit Image"
                       />
@@ -631,12 +627,11 @@
                     <h3
                       class="text-4xl font-extrabold secondary-text-color my-6"
                     >
-                      Red Dragon
+                      Apples
                     </h3>
                     <p class="py-4 text-[#12121299]">
                       Professional employees are there for you to pick the most
-                      <br />
-                      amazing and fresh fruits.
+                      <br amazing and fresh fruits.
                     </p>
 
                     <div
@@ -794,19 +789,14 @@
               <div class="card-actions">
                 <!-- Open the modal using ID.showModal() method -->
                 <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg lg:hidden block"
-                >
-                  Details
-                </button>
-                <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg hidden lg:flex"
+                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg"
                   onclick="my_modal_2.showModal()"
                 >
                   Details
                 </button>
                 <dialog
                   id="my_modal_2"
-                  class="modal justify-center items-center w-[500px] mx-auto my-auto"
+                  class="modal justify-center items-center mx-auto my-auto"
                 >
                   <form
                     method="dialog"
@@ -814,7 +804,7 @@
                   >
                     <div>
                       <img
-                        class="w-[200px] h-[200px] mt-[70px] m"
+                        class="lg:w-[200px] lg:h-[200px] w-full h-full mt-[70px]"
                         src="images/fruit7.png"
                         alt="Fruit Image"
                       />
@@ -985,19 +975,14 @@
               <div class="card-actions">
                 <!-- Open the modal using ID.showModal() method -->
                 <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg lg:hidden block"
-                >
-                  Details
-                </button>
-                <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg hidden lg:flex"
+                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg"
                   onclick="my_modal_3.showModal()"
                 >
                   Details
                 </button>
                 <dialog
                   id="my_modal_3"
-                  class="modal justify-center items-center w-[500px] mx-auto my-auto"
+                  class="modal justify-center items-center mx-auto my-auto"
                 >
                   <form
                     method="dialog"
@@ -1005,7 +990,7 @@
                   >
                     <div>
                       <img
-                        class="w-[200px] h-[200px] mt-[70px] m"
+                        class="lg:w-[200px] lg:h-[200px] w-full h-full mt-[70px]"
                         src="images/fruit8.png"
                         alt="Fruit Image"
                       />
@@ -1176,19 +1161,14 @@
               <div class="card-actions">
                 <!-- Open the modal using ID.showModal() method -->
                 <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg lg:hidden block"
-                >
-                  Details
-                </button>
-                <button
-                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg hidden lg:flex"
+                  class="btn bg-opacity-0 hover:bg-opacity-0 border-none text-[#F85559] capitalize font-bold text-lg"
                   onclick="my_modal_4.showModal()"
                 >
                   Details
                 </button>
                 <dialog
                   id="my_modal_4"
-                  class="modal justify-center items-center w-[500px] mx-auto my-auto"
+                  class="modal justify-center items-center mx-auto my-auto"
                 >
                   <form
                     method="dialog"
@@ -1196,7 +1176,7 @@
                   >
                     <div>
                       <img
-                        class="w-[200px] h-[200px] mt-[70px] m"
+                        class="lg:w-[200px] lg:h-[200px] w-full h-full mt-[70px]"
                         src="images/fruit9.png"
                         alt="Fruit Image"
                       />
@@ -1445,7 +1425,9 @@
           >
             Why Choose Us
           </h5>
-          <p class="text-[#12121299] lg:text-base text-sm font-medium mb-12">
+          <p
+            class="text-[#12121299] lg:text-base text-sm font-medium lg:mb-12 mb-5"
+          >
             Contrary to popular belief, is not simply random text. It has roots
             in a piece of classical
             <br class="hidden lg:block" />
@@ -1531,7 +1513,11 @@
 
           <!-- Choose section image starts here -->
           <div class="grid lg:order-none order-1 justify-center">
-            <img class="mt-9" src="./images/whychoose1.png" alt="Food Image" />
+            <img
+              class="lg:mt-9"
+              src="./images/whychoose1.png"
+              alt="Food Image"
+            />
           </div>
           <!-- Chose section image ends here -->
 
